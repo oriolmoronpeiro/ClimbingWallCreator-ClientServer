@@ -1,0 +1,11 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-MT-PUBOULD12SOL {
+    width: 500px;
+    height: 500px;
+    background-position: -5px -5px;
+}

@@ -1,0 +1,11 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-kmz-holds-set-4-juego-de-11-presas-de-escalada-s-xl {
+    width: 600px;
+    height: 600px;
+    background-position: -5px -5px;
+}

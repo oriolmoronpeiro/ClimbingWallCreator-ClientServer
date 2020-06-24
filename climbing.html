@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Climbing app</title>
+        <link type="text/css" rel="stylesheet" media="all" href="css/mystyle.css"/>
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Climbing app</h1>
+                <h3 id="roomname-header-label"><span class="roomname-label">Room name:</span><span id="roomname-header" class="roomname"></span></h3>
+            </header>
+            <aside class="users-list">
+                <ul id="user-list">
+                </ul>
+            </aside>
+            <div class="canvas_wrapper">
+                <span class="wall-count">Wall: </span>
+                <span id="wallnumber" class="wall-count-number"></span>
+                <button class="confirm" id="goConfirm">confirm</button>
+            </div>
+            <div class="gallery_wrapper">
+            </div>
+            <div class="sprites">
+                <ul>
+                    <li><img src="./img/pieces/blue/50x50/blue1.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue2.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue3.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue4.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue5.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue6.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue7.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue8.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue9.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue10.png" /></li>
+                    <li><img src="./img/pieces/blue/50x50/blue11.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow1.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow2.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow3.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow4.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow5.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow6.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow7.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow8.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow9.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow10.png" /></li>
+                    <li><img src="./img/pieces/yellow/50x50/yellow11.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red1.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red2.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red3.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red4.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red5.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red6.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red7.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red8.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red9.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red10.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red11.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red12.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red13.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red14.png" /></li>
+                    <li><img src="./img/pieces/red/50x50/red15.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange1.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange2.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange3.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange4.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange5.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange6.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange7.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange8.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange9.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange10.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange11.png" /></li>
+                    <li><img src="./img/pieces/orange/50x50/orange12.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green1.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green2.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green3.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green4.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green5.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green6.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green7.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green8.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green9.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green10.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green11.png" /></li>
+                    <li><img src="./img/pieces/green/50x50/green12.png" /></li>
+                </ul>
+            </div>
+            <button class="back" id="goBack">exit room</button>
+            <button class="back" id="goChat">open chat</button>
+            <button class="back" id="goGallery">open gallery</button>
+            <main class="login-form">
+                <h3>Login</h3>
+                <div class="input-login">
+                    <h4>Username</h4>
+                    <input id="username-field" type="text">
+                    <div id="warning_user_exists" class="message-log warning">this username is in use</div>
+                </div>
+                <div class="input-login">
+                    <h4>Room Name</h4>
+                    <input id="roomname-field" type="text">
+                </div>
+                <div class="input-login avatar">
+                    <h4 class="conc-title">Avatar&nbsp<h6 class="conc-title">(Optional)</h6></h4>
+                    <ul class="avatars">
+                        <li id="avatar_1" class="selected"><img src="img/avatars/avatar_1.png" alt="avatar" /></li>
+                        <li id="avatar_2"><img src="img/avatars/avatar_2.png" alt="avatar" /></li>
+                        <li id="avatar_3"><img src="img/avatars/avatar_3.png" alt="avatar" /></li>
+                        <li id="avatar_4"><img src="img/avatars/avatar_4.png" alt="avatar" /></li>
+                        <li id="avatar_5"><img src="img/avatars/avatar_5.png" alt="avatar" /></li>
+                    </ul>
+                </div>
+                <div class="joinbtn">
+                    <button id="joinserverbtn" type="submit">Join</button>
+                </div>
+            </main>
+        </div>
+        <main class="message-content">
+            <div id="msgboard" class="msgboard hide">
+            </div>
+            <div class="inputelements">
+                <input id="inputMsg" type="text" class="msginput">
+                <button id="sendMsgBtn" type="submit">Send</button>
+            </div>
+        </main>
+    </body>
+
+    <script type="text/javascript" src="js/clientECV.js"></script>
+    <!-- <script type="text/javascript" src="js/canvas.js"></script> -->
+
+</html>
